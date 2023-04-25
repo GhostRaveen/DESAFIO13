@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>alinhamento vertical</title>
+	<style>
+		* {
+			margin: 0px;
+		}
+		#container {
+			background-image: url('img/fundo-madeira.jpg');
+			background-size: cover;
+			position: relative;
+			height: 100vh;
+		}
+		#conteudo {
+			background-image: url('img/frame-iphone.png');
+			background-size: 100% 100%;
+			position: absolute;
+			height: 79vh;
+			width: 40vh;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#iframe {
+			background: #fff url('img/tela-home.jpg') no-repeat;
+			background-size: cover;
+			position: absolute;
+			height: 59.2vh;
+			width: 34.4vh;
+			left: 50%;
+			top: 50.3%;
+			border: 1px solid #0000007a;
+			transform: translate(-50%, -50%);
+			box-shadow: inset 2px 2px 9px 0px #0000008c;
+		}
+		ul {
+			list-style: none;
+			position: absolute;
+			left: 78%;
+			top: 21%;
+		}
+		img {
+			width: 5vh;
+			border-radius: 50px;
+			cursor: cell;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+	<div id="conteudo"></div>
+	<iframe id="iframe" name="_iframe" frameborder="0" src=""></iframe>
+	<div>
+		<ul>
+			<li><a href="#" target="_iframe"><img src="img/logo-home.jpg" alt="botão"></a></li>
+			<li><a href="pags/youtube.html" target="_iframe"><img src="img/logo-youtube.jpg" alt="botão"></a></li>
+			<li><a href="pags/github.html" target="_iframe"><img src="img/logo-github.jpg" alt="botão"></a></li>
+			<li><a href="pags/instagram.html" target="_iframe"><img src="img/logo-instagram.jpg" alt="botão"></a></li>
+			<li><a href="pags/twitter.html" target="_iframe"><img src="img/logo-twitter.jpg" alt="botão"></a></li>
+			<li><a href="pags/meta.html" target="_iframe"><img src="img/logo-facebook.jpg" alt="botão"></a></li>
+		</ul>
+	</div>
+</body> 
+</html>
