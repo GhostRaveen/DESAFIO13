@@ -8,11 +8,13 @@
 		* {
 			margin: 0px;
 		}
-		#container {
+		body {
 			background-image: url('img/fundo-madeira.jpg');
 			background-size: cover;
-			position: relative;
 			height: 100vh;
+		}
+		#container {
+			position: relative;
 		}
 		#conteudo {
 			background-image: url('img/frame-iphone.png');
@@ -34,17 +36,22 @@
 			transform: translate(-50%, -50%);
 			box-shadow: inset 2px 2px 9px 0px #0000008c;
 		}
-		ul {
-			list-style: none;
-			position: absolute;
-			left: 78%;
-			top: 21%;
+		section {
+			text-align: right;
 		}
 		img {
-			width: 5vh;
-			border-radius: 50px;
+			width: 50px;
+			margin: 10px;
+			border-radius: 50%;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
 			cursor: cell;
-			background-size: cover;
+			box-sizing: border-box;
+		}
+		img:hover {
+			border: 1px solid rgba(255, 255, 255, 0.637);
+			transform: translate(-3px, -3px);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+			transition: transform .3s, border 1s;
 		}
 	</style>
 </head>
@@ -52,16 +59,18 @@
 	<div id="container"></div>
 	<div id="conteudo"></div>
 	<iframe id="iframe" name="_iframe" frameborder="0" src="pags/home.html"></iframe>	
-	<div>
-		<ul>
-			<li><a href="pags/home.html" target="_iframe"><img src="img/logo-home.jpg" alt="botão"></a></li>
-			<br>
-			<li><a href="pags/youtube.html" target="_iframe"><img src="img/logo-youtube.jpg" alt="botão"></a></li>
-			<li><a href="pags/github.html" target="_iframe"><img src="img/logo-github.jpg" alt="botão"></a></li>
-			<li><a href="pags/instagram.html" target="_iframe"><img src="img/logo-instagram.jpg" alt="botão"></a></li>
-			<li><a href="pags/twitter.html" target="_iframe"><img src="img/logo-twitter.jpg" alt="botão"></a></li>
-			<li><a href="pags/meta.html" target="_iframe"><img src="img/logo-facebook.jpg" alt="botão"></a></li>
-		</ul>
-	</div>
+	<section>
+		<a href="pags/home.html" target="_iframe"><img src="img/logo-home.jpg" alt="botão"></a>
+		<br>
+		<a href="pags/youtube.html" target="_iframe"><img src="img/logo-youtube.jpg" alt="botão"></a>
+		<br>
+		<a href="pags/github.html" target="_iframe"><img src="img/logo-github.jpg" alt="botão"></a>
+		<br>
+		<a href="pags/instagram.html" target="_iframe"><img src="img/logo-instagram.jpg" alt="botão"></a>
+		<br>
+		<a href="pags/twitter.html" target="_iframe"><img src="img/logo-twitter.jpg" alt="botão"></a>
+		<br>
+		<a href="pags/meta.html" target="_iframe"><img src="img/logo-facebook.jpg" alt="botão"></a>
+	</section>
 </body> 
 </html>
