@@ -25,8 +25,6 @@
 			transform: translate(-50%, -50%);
 		}
 		#iframe {
-			background: #fff url('img/tela-home.jpg') no-repeat;
-			background-size: cover;
 			position: absolute;
 			height: 59.2vh;
 			width: 34.4vh;
@@ -35,6 +33,7 @@
 			border: 1px solid #0000007a;
 			transform: translate(-50%, -50%);
 			box-shadow: inset 2px 2px 9px 0px #0000008c;
+			transition: 50s;
 		}
 		ul {
 			list-style: none;
@@ -53,10 +52,11 @@
 <body>
 	<div id="container"></div>
 	<div id="conteudo"></div>
-	<iframe id="iframe" name="_iframe" frameborder="0" src=""></iframe>
+	<iframe id="iframe" name="_iframe" frameborder="0" src="pags/home.html"></iframe>	
 	<div>
 		<ul>
-			<li><a href="#" target="_iframe"><img src="img/logo-home.jpg" alt="botão"></a></li>
+			<li><a href="pags/home.html" target="_iframe"><img src="img/logo-home.jpg" alt="botão"></a></li>
+			<br>
 			<li><a href="pags/youtube.html" target="_iframe"><img src="img/logo-youtube.jpg" alt="botão"></a></li>
 			<li><a href="pags/github.html" target="_iframe"><img src="img/logo-github.jpg" alt="botão"></a></li>
 			<li><a href="pags/instagram.html" target="_iframe"><img src="img/logo-instagram.jpg" alt="botão"></a></li>
